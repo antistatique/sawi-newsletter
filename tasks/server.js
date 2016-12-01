@@ -10,6 +10,7 @@ module.exports = function(gulp, $, config, browserSync, runSequence) {
       server: {
         baseDir: [config.app.basedir],
       },
+      port: 3030,
       open: false,
       notify: false
     });
