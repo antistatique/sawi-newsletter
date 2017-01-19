@@ -61,22 +61,51 @@
     .container_img{
       padding: 10px 0;
     }
-    .bloc_title{
+    .info {
       color: #000000;
       font-family: helvetica, arial, Sans-serif;
-      font-size: 1.5em;
+      font-size: 16px;
+    }
+    .info a {
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+    }
+    .date{
+      color: #aaaaaa;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 16px;
       font-weight: bold;
     }
-    .title{
+    .h1{
       color: #000000;
       font-family: helvetica, arial, Sans-serif;
-      font-size: 2em;
+      font-size: 48px;
+      font-weight: bold;
+    }
+    .section-title{
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 36px;
+      font-weight: lighter;
+    }
+    .h2 {
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 31px;
       font-weight: 800;
     }
-    .bloc_title_white{
-      color: #ffffff;
+    .h3{
+      color: #000000;
       font-family: helvetica, arial, Sans-serif;
-      font-size: 1.2em;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .h4{
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 21px;
       font-weight: bold;
     }
     .bloc_text{
@@ -85,11 +114,12 @@
       font-size: 16px;
       line-height: 24px;
     }
-    .bloc_text_white{
-      color: #ffffff;
+    .chapeau {
+      color: #000000;
       font-family: helvetica, arial, Sans-serif;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: lighter;
     }
     .bloc_footer{
       font-size: 12px;
@@ -115,6 +145,21 @@
       padding: 0.8em;
       text-transform: uppercase;
     }
+    .actu-links{
+      margin: 12px 0;
+    }
+    .actu-links a{
+      font-size: 16px;
+      font-family: 'Helvetica Neue', Helvetica, Arial, Serif;
+      line-height: 20px;
+      background-color: #5bc0de;
+      display: inline-block;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      padding: 0.8em;
+      text-transform: uppercase;
+    }
 
     /* Constrain email width for small screens */
     @media screen and (max-width: 760px) {
@@ -127,6 +172,7 @@
         float: none!important;
         display: block!important;
         margin: 5px auto!important;
+        width: 100%!important;
       }
       img[class="item_img"]{
         width: 100%!important;
@@ -167,29 +213,139 @@
                     <img src="logo.png" width="166" height="82" alt="SAWI" style="margin:0;padding:0;">
                   </td>
                   <td align="right" style=" margin: 0; padding: 0;">
-                  <p style="font-size: 1.2em; line-height:1em; text-transform: uppercase; margin: 0; padding: 0; color: #000000; font-family: helvetica, arial, Sans-serif;"><singleline label="Newsletter title">3 nouvelles formations</singleline></p>
                   <p style="font-size: 0.5px; margin: 3px 0; padding: 0; line-height:100%;"><webversion style="font-size: 12px; color:#000000; line-height:100%; text-decoration: underline; font-family: helvetica, arial, Sans-serif;">Voir la version web</webversion></p>
+                  <p style="font-size: 1em; line-height:1.2em; margin: 0; padding: 0; color: #000000; font-family: helvetica, arial, Sans-serif;"><singleline label="Newsletter title">3 nouvelles formations</singleline></p>
                   </td>
                 </tr>
-                <tr bgcolor="#333333">
-                  <td colspan="2" height="1" bgcolor="#333333"><img src="px.gif" border="0" alt="" height="1" width="1"></td>
-                </tr>
               </table>
+              <!--fin logo -->
               <repeater>
               <!-- Introduction -->
-              <layout label='Introduction'>
+              <layout label='Introduction '>
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#eeeeee">
+                  <tr>
+                    <td colspan="3" height="20"><img src="px.gif" border="0" alt="" height="20" width="20"></td>
+                  </tr>
+                  <tr>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                    <td>
+                      <p class="h1">
+                        <singleline label="Titre">
+                          Bonjour !
+                        </singleline>
+                      </p>
+                    </td>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="20"><img src="px.gif" border="0" alt="" height="20" width="20"></td>
+                  </tr>
+                  <tr>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                    <td>
+                      <div class="chapeau">
+                        <multiline label="texte">
+                          <p>
+                            Nous vivons dans un monde en perpétuelle évolution dans lequel il devient nécessaire de se spécialiser tout au long de son parcours professionnel.
+                            Le SAWI a pensé à vous et vous propose trois nouvelles formations de spécialiste, qui mènent toutes au brevet fédéral.
+                          </p>
+                        </multiline>
+                      </div>
+                    </td>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="20"><img src="px.gif" border="0" alt="" height="20" width="20"></td>
+                  </tr>
+                </table>
+              </layout>
+              <!-- fin intro -->
+              <layout label="espace">
+                <div style="color : #FFFFFF; font-size: 1px;">
+                  <singleline label="texte invisible">sawi</singleline>
+                </div>
+                <table cellpadding="0" cellspacing="0" border="0" align="center" height="20" width="100%" class="full-table">
+                  <tr>
+                    <td height="20" align="center">
+                      <img src="px.gif" alt="" height="20" width="20">
+                    </td>
+                  </tr>
+                </table>
+              </layout>
+              <!-- Introduction image-->
+              <layout label='Introduction avec image'>
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#eeeeee">
+                  <tr>
+                    <td colspan="3" height="20">
+                      <div class="container_img">
+                        <img editable src="cover.png" width="100%" height="auto" label="Image" style="height:auto;margin:0;padding:0;"/>
+                      </div>
+                    </td>
+                  </tr>
+                   <tr>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                    <td>
+                      <p class="h1">
+                        <singleline label="Titre">
+                          Bonjour !
+                        </singleline>
+                      </p>
+                    </td>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="20"><img src="px.gif" border="0" alt="" height="20" width="20"></td>
+                  </tr>
+                  <tr>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                    <td>
+                      <div class="chapeau">
+                        <multiline label="texte">
+                          <p>
+                            Nous vivons dans un monde en perpétuelle évolution dans lequel il devient nécessaire de se spécialiser tout au long de son parcours professionnel.
+                            Le SAWI a pensé à vous et vous propose trois nouvelles formations de spécialiste, qui mènent toutes au brevet fédéral.
+                          </p>
+                        </multiline>
+                      </div>
+                    </td>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="20"><img src="px.gif" border="0" alt="" height="20" width="20"></td>
+                  </tr>
+                </table>
+              </layout>
+              <!-- fin intro avec image-->
+              <!-- Bloc texte -->
+              <layout label='Titre et texte'>
                 <table border="0" width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td colspan="3" height="20"><img src="px.gif" border="0" alt="" height="20" width="20"></td>
                   </tr>
                   <tr>
-                    <td width="5%">
-                      <img src="px.gif" border="0" alt="" height="5" width="5">
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
                     </td>
                     <td>
-                      <p class="title">
+                      <p class="h3">
                         <singleline label="Titre">
-                          Bonjour !
+                          Ceci est un titre
                         </singleline>
                       </p>
                     </td>
@@ -205,40 +361,55 @@
                       <div class="bloc_text">
                         <multiline label="texte">
                           <p>
-                            Nous vivons dans un monde en perpétuelle évolution dans lequel il devient nécessaire de se spécialiser tout au long de son parcours professionnel.
-                            Le SAWI a pensé à vous et vous propose trois nouvelles formations de spécialiste, qui mènent toutes au brevet fédéral.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                           </p>
                         </multiline>
                       </div>
                     </td>
-                    <td width="5%">
-                      <img src="px.gif" border="0" alt="" height="5" width="5">
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
                     </td>
                   </tr>
                 </table>
               </layout>
-              <!-- espace -->
-              <layout label="espace">
-                <div style="color : #FFFFFF; font-size: 1px;">
-                  <singleline label="texte invisible">sawi</singleline>
-                </div>
-                <table cellpadding="0" cellspacing="0" border="0" align="center" height="20" width="100%" class="full-table">
-                  <tr>
-                    <td height="20" align="center">
-                      <img src="px.gif" alt="" height="20" width="20">
-                    </td>
-                  </tr>
-                </table>
-              </layout>
-              <!-- fin espace -->
-              <!-- specialiste en communication -->
-              <layout label='specialiste en communication'>
-                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#eeeeee">
+              <!-- fin bloc texte -->
+              <!-- call to action -->
+              <layout label="Bouton">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" class="container" height="auto">
+                    <tr>
+                      <td height="20">
+                        <img src="px.gif" height="20" alt="" width="20">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <div class="call-links">
+                          <table cellpadding="8" cellspacing="0" border="0" height="auto">
+                            <tr>
+                              <td>
+                                <a href="#"><singleline label="Titre bouton">Clique-moi</singleline></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="20">
+                        <img src="px.gif" width="20" height="20" alt="">
+                      </td>
+                    </tr>
+                  </table>
+                </layout>
+              <!-- fin call to action -->
+              <!-- teaser formation -->
+              <layout label='teaser formation'>
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                   <tr>
                     <td colspan="3" height="20"><img src="px.gif" border="0" alt="" height="20" width="20"></td>
                   </tr>
                   <tr>
-                    <td width="5%">
+                    <td width="30">
                       <img src="px.gif" border="0" alt="" height="5" width="5">
                     </td>
                     <td>
@@ -248,7 +419,7 @@
                             <div class="container_img">
                               <img editable src="cover-Specialiste-en-communication.png" width="220" height="100%" label="Image" style="height:auto;margin:0;padding:0;" align="right"/>
                             </div>
-                            <p class="bloc_title">
+                            <p class="h3">
                               <singleline label="Titre">
                                 Spécialiste en communication
                               </singleline>
@@ -277,11 +448,10 @@
                             </div>
                           </td>
                         </tr>
-
                       </table>
                     </td>
-                    <td width="5%">
-                      <img src="px.gif" border="0" alt="" height="5" width="5">
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
                     </td>
                   </tr>
                   <tr>
@@ -289,54 +459,91 @@
                   </tr>
                 </table>
               </layout>
-              <!-- fin specialiste en communication-->
-              <!-- Spécialiste en vente -->
-              <layout label='specialiste en vente'>
-                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#b64926" color="#ffffff">
+              <!-- fin teaser formation -->
+              <!-- teaser séance -->
+              <layout label='teaser séance'>
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#eeeeee">
                   <tr>
                     <td colspan="3" height="20"><img src="px.gif" border="0" alt="" height="20" width="20"></td>
                   </tr>
                   <tr>
-                    <td width="5%">
-                      <img src="px.gif" border="0" alt="" height="5" width="5">
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
                     </td>
                     <td>
                       <table border="0" width="100%" cellpadding="0" cellspacing="0">
                         <tr>
-                          <td>
-                            <div class="container_img">
-                              <img editable src="cover-Specialiste-en-vente.png" width="220" height="100%" label="Image" style="height:auto;margin:0;padding:0;" align="right"/>
-                            </div>
-                            <p class="bloc_title" style="color:#ffffff;">
+                          <td colspan="2">
+                            <p class="h3">
                               <singleline label="Titre">
-                                Spécialiste en vente
+                                Informations complémentaire
                               </singleline>
                             </p>
-                            <div class="bloc_text" style="color:#ffffff;">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <p class="h4">
+                              <singleline label="Formation">
+                              Spécialiste en stratégie digitale
+                              </singleline>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="25">
+                            <img src="location.png" border="0" alt="" height="20" width="20">
+                          </td>
+                          <td>
+                            <p class="info">
+                              <a href="#">
+                                <singleline label="Lieu">
+                                  Maison de la Communication, Lausanne
+                                </singleline>
+                              </a>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="calendar.png" border="0" alt="" height="20" width="20" style="padding:0;margin:0;">
+                          </td>
+                          <td>
+                            <p class="info">
+                              <singleline label="Horaire">
+                                19.01.2017 à 18:00
+                              </singleline>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <div class="bloc_text">
                               <multiline label="texte">
-                                <p style="color:#ffffff;">
+                                <p>
                                   La formation est destinée à toutes les personnes possédant une expérience pratique dans le domaine du marketing, de la vente ou de la communication et qui souhaitent se profiler comme Spécialiste en marketing autant sur le plan national qu'international.
                                 </p>
                               </multiline>
                             </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
                             <div class="call-links">
                               <table cellpadding="0" cellspacing="0" border="0" height="auto">
                                 <tr>
                                   <td>
-                                    <a href="#"><singleline label="Bouton">Intéressé(e)?</singleline></a>
+                                    <a href="#"><singleline label="Bouton">S'inscrire</singleline></a>
                                   </td>
                                 </tr>
                               </table>
                             </div>
-                            <a href="#" style="color:#ffffff;">
-                              <singleline label="lien">Séance d'information</singleline>
-                            </a>
                           </td>
                         </tr>
                       </table>
                     </td>
-                    <td width="5%">
-                      <img src="px.gif" border="0" alt="" height="5" width="5">
+                    <td colspan="3" width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
                     </td>
                   </tr>
                   <tr>
@@ -344,89 +551,219 @@
                   </tr>
                 </table>
               </layout>
-              <!-- fin Spécialiste en vente-->
-              <!-- Spécialiste en marketing -->
-              <layout label='specialiste en marketing'>
-                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#3fb5dd">
+              <!-- titre section -->
+              <layout label="titre section">
+                <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td colspan="3" height="40"><img src="px.gif" border="0" alt="" height="40" width="20"></td>
+                  </tr>
+                  <tr>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                    <td>
+                      <p class="section-title">
+                        <singleline label="Titre de section">
+                          Nos dernières actualités
+                        </singleline>
+                      </p>
+                    </td>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                  </tr>
                   <tr>
                     <td colspan="3" height="20"><img src="px.gif" border="0" alt="" height="20" width="20"></td>
                   </tr>
+                </table>
+              </layout>
+              <!--Teaser actu-->
+              <layout label='Teaser actu'>
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                   <tr>
-                    <td width="5%">
-                      <img src="px.gif" border="0" alt="" height="5" width="5">
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
                     </td>
                     <td>
                       <table border="0" width="100%" cellpadding="0" cellspacing="0">
                         <tr>
                           <td>
                             <div class="container_img">
-                              <img editable src="cover-Specialiste-en-marketing.png" width="220" height="100%" label="Image" style="height:auto;margin:0;padding:0;" align="right"/>
+                              <img editable src="actu.jpg" width="100%" height="auto" label="Image"/>
                             </div>
-                            <p class="bloc_title">
-                              <singleline label="Titre">
-                                Spécialiste en marketing
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="date">
+                              <singleline label="Date">
+                              25 Novembre 2016
                               </singleline>
                             </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="h3">
+                              <singleline label="Titre">
+                              La formation en entreprise face aux défis de l'avenir
+                              </singleline>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
                             <div class="bloc_text">
                               <multiline label="texte">
                                 <p>
-                                  A l’issue de cette formation, vous serez à même de maîtriser des situations de vente complexes et de se positionner sur tous les postes de cadre de Spécialiste en vente.
-                                  Elle dure 12 mois et commence le 25 janvier 2017.
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                 </p>
                               </multiline>
                             </div>
-                            <div class="call-links">
-                              <table cellpadding="0" cellspacing="0" border="0" height="auto">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <div class="actu-links">
+                              <table cellpadding="8" cellspacing="0" border="0" height="auto">
                                 <tr>
                                   <td>
-                                    <a href="#"><singleline label="Bouton">Intéressé(e)?</singleline></a>
+                                    <a href="#"><singleline label="Titre bouton">Lire la suite</singleline></a>
                                   </td>
                                 </tr>
                               </table>
                             </div>
-                            <a href="#">
-                              <singleline label="lien">Séance d'information</singleline>
-                            </a>
                           </td>
                         </tr>
                       </table>
                     </td>
-                    <td width="5%">
-                      <img src="px.gif" border="0" alt="" height="5" width="5">
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
                     </td>
-                  </tr>
-                  <tr>
-                    <td colspan="3" height="20"><img src="px.gif" border="0" alt="" height="20" width="20"></td>
                   </tr>
                 </table>
               </layout>
-              <!-- fin Spécialiste en marketing-->
+              <!-- fin teaser actu-->
+              <layout label="ligne">
+                <div style="color : #FFFFFF; font-size: 1px;">
+                  <singleline label="texte invisible">sawi</singleline>
+                </div>
+                <table cellpadding="0" cellspacing="0" border="0" align="center" height="20" width="100%" class="full-table">
+                  <tr>
+                    <td colspan="3" height="5" align="center">
+                      <img src="px.gif" alt="" height="5" width="5">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                    <td>
+                      <hr>
+                    </td>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="5" align="center">
+                      <img src="px.gif" alt="" height="5" width="5">
+                    </td>
+                  </tr>
+                </table>
+              </layout>
+              <layout label="réseaux sociaux">
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+                  <tr>
+                    <td colspan="2" height="40">
+                      <img src="px.gif" border="0" alt="" height="40" width="1">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <p class="h3">
+                        <singleline label="contact_title">
+                          Suivez-nous également sur les réseaux sociaux&nbsp;!
+                        </singleline>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="60">
+                      <a href="https://www.facebook.com/sawi.suisse" alt="facebook"><img src="facebook.png" border="0" alt="" height="30" width="30" style="margin:0;padding:0;"></a>
+                    </td>
+                    <td class="bloc_text">
+                      <a href="https://www.facebook.com/sawi.suisse" alt="facebook"><p>Likez-nous "a lot" sur Facebook</p></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="60">
+                      <a href="https://twitter.com/SawiSuisse" alt="twitter"><img src="twitter.png" border="0" alt="" height="30" width="30" style="margin:0;padding:0;"></a>
+                    </td>
+                    <td class="bloc_text">
+                      <a href="https://twitter.com/SawiSuisse" alt="twitter"><p>Attrapez nos gazouillis sur Twitter</p></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="60">
+                      <a href="https://www.youtube.com/channel/UCav9u2JbVtFIZQRviCBcznQ" alt="youtube"><img src="youtube.png" border="0" alt="" height="30" width="30" style="margin:0;padding:0;"></a>
+                    </td>
+                    <td class="bloc_text">
+                      <a href="https://www.youtube.com/channel/UCav9u2JbVtFIZQRviCBcznQ" alt="youtube"><p>Jouez-nous en boucle sur Youtube</p></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="60">
+                     <a href="https://www.snapchat.com/add/sawi" alt="snapchat"> <img src="snapchat.png" border="0" alt="" height="30" width="30" style="margin:0;padding:0;"></a>
+                    </td>
+                    <td class="bloc_text">
+                      <a href="https://www.snapchat.com/add/sawi" alt="snapchat"><p>Snapons sur Snapchat</p></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" height="20">
+                      <img src="px.gif" border="0" alt="" height="20" width="1">
+                    </td>
+                  </tr>
+                </table>
+              </layout>
             </repeater>
-            <!-- Contact et RS -->
-
-            <!-- Pref et unsubscribe -->
-              <table border="0" width="100%" height="300" cellpadding="0" cellspacing="0" align="center"  style="background:url('http://www.sawi.com/de/fileadmin/templates/images/bar-yellow.png') 50% 100% no-repeat; background-size:contain;">
-                <tr>
-                  <td colspan="2" height="100">
-                    <img src="px.gif" border="0" alt="" height="20" width="1">
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="logo.png" width="166" height="82" alt="SAWI" style="margin:0;padding:0;">
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="bloc_title">
-                      <singleline label="contact_title">
-                        Suivez-nous également sur <a href="https://www.facebook.com/sawi.suisse" alt="">facebook</a> !
-                      </singleline>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="left">
+          <!-- Pref et unsubscribe -->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" align="center"  style="background:url('http://www.sawi.com/de/fileadmin/templates/images/bar-yellow.png') 50% 100% no-repeat; background-size:contain;">
+              <tr>
+                <td colspan="2" height="20">
+                  <img src="px.gif" border="0" alt="" height="20" width="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="logo.png" width="166" height="82" alt="SAWI" style="height:auto;margin:0;padding:0;"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="chapeau">
+                    Academy for Marketing and Communication SA
+                    Avenue de Florimont 1, 1006 Lausanne
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="h3">
+                    <a href="tel:+41213434060">+41 21 343 40 60</a>
+                  </p>
+                  <p class="h3">
+                    <a href="mailto:lausanne@sawi.com">lausanne@sawi.com</a>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">
                   <div class="bloc_text bloc_footer">
                     <p>Éditer vos <preferences>préférences</preferences> ou vous pouvez également vous <unsubscribe>désinscrire</unsubscribe> de notre newsletter.<br/>
                   <multiline label="unsubscribe_pref_message">
@@ -434,14 +771,14 @@
                   </multiline>
                   </p>
                   </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" height="40">
-                    <img src="px.gif" border="0" alt="" height="40" width="1">
-                  </td>
-                </tr>
-              </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" height="40">
+                  <img src="px.gif" border="0" alt="" height="40" width="1">
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </table>
