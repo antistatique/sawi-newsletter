@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">    <!-- So that mobile webkit will display zoomed in -->
+  <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+
+  <meta property="og:title" content="sawi">
+  <meta property="og:description" content="sawi">
+  <meta property="og:site_name" content="sawi">
+
+  <title>SAWI</title>
+
+  <style type="text/css">
+       /* Client-specific Styles */
+        #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+        body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+        /* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/
+        .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+        /* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+        #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important; background-color: #F2F2F2; font-family: 'Roboto', 'helvetica', 'arial', Sans-serif;}
+        /* End reset */
+        /* Some sensible defaults for images
+        Bring inline: Yes. */
+        img {display: block; outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+        a img {border:none;}
+        .image_fix {display:block;}
+        /* Yahoo paragraph fix */
+        p {margin: 0.5em 0;}
+        /* Outlook 07, 10 Padding issue fix */
+        table td {border-collapse: collapse;}
+        /* Remove spacing around Outlook 07, 10 tables*/
+        table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;}
+
+    /* Resets: see reset.css for details */
+    .ReadMsgBody { width: 100%; background-color: #FFFFFF;}
+    .ExternalClass {width: 100%; background-color: #FFFFFF;}
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+    .yshortcuts a {border-bottom: none !important;}
+    p{
+      margin: 10px 0;
+      padding: 0;
+    text-align:left;
+    }
+    ul{
+      margin: 5px 0;
+      padding: 5px 15px;
+    }
+    li{
+      margin: 0;
+      padding: 0;
+      font-family: helvetica, arial, Sans-serif;
+    }
+    a {
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    a.white {
+      color: #ffffff;
+      font-family: helvetica, arial, Sans-serif;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .table_of_content li{
+      list-style: none;
+    }
+    .table_of_content a{
+      color:#ffffff;
+      font-family: helvetica, arial, Sans-serif;
+    }
+    .container {
+      width: 640px!important;
+    }
+      .container_img{
+      padding: 10px 0;
+    }
+    .info {
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 16px;
+    }
+    .info a {
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+    }
+    .date{
+      color: #aaaaaa;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .h1{
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+    }
+    .section-title{
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 36px;
+      font-weight: lighter;
+    }
+    .h2 {
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 31px;
+      font-weight: 800;
+    }
+    .h3{
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .h4{
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 21px;
+      font-weight: bold;
+    }
+    .bloc_text{
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .chapeau {
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: lighter;
+    }
+    .bloc_footer{
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .newsletter_intro{
+      color: #000000;
+      font-family: helvetica, arial, Sans-serif;
+      font-size: 12px;
+    }
+    .call-links{
+      margin: 12px 0;
+    }
+    .call-links a{
+      font-size: 16px;
+      font-family: 'Helvetica Neue', Helvetica, Arial, Serif;
+      line-height: 20px;
+      background-color: #ffe000;
+      display: inline-block;
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      padding: 0.8em;
+      text-transform: uppercase;
+    }
+    .actu-links{
+      margin: 12px 0;
+    }
+    .actu-links a{
+      font-size: 16px;
+      font-family: 'Helvetica Neue', Helvetica, Arial, Serif;
+      line-height: 20px;
+      background-color: #5bc0de;
+      display: inline-block;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      padding: 0.8em;
+      text-transform: uppercase;
+    }
+
+    /* Constrain email width for small screens */
+  @media screen and (max-width: 760px) {
+      table.container {
+        width:96% !important;
+        margin-left: 2%!important;
+        margin-right: 2%!important;
+      }
+      div.container_img img {
+        float: none!important;
+        display: block!important;
+        margin: 5px auto!important;
+        width: 100%!important;
+      }
+      img.item_img {
+        width: 100%!important;
+        height: auto!important;
+      }
+    }
+
+    /*
+    Corporate
+    // Colors
+    $primary:                   #ffe000;
+    $background:                #FFFFFF;
+    $background-block:          #FFFFFF;
+    $text:                      #000000;
+
+    */
+
+
+  </style>
+    </head>
+<body style="margin:0px; padding:0px;" color="#000000" link="#ffe000" vlink="#ffe000" style="-webkit-text-size-adjust: none;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <!-- 100% wrapper (grey background) -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center">
+        <table class="container" border="0" width="640" cellpadding="0" cellspacing="0" align="center">
+          <tr>
+            <td height="15">
+              <img src="px.gif" border="0" alt="" height="15" width="1">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!-- logo -->
+              <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td align="left">
+                    <img src="logo.png" width="166" height="82" alt="SAWI" style="margin:0;padding:0;align:left;display:block;">
+                  </td>
+                  <td align="right" style=" margin: 0; padding: 0;">
+                  <p style="font-size: 8px; margin: 3px 0; padding: 0; line-height:100%;text-align:right;"><webversion style="font-size: 12px; color:#000000; line-height:100%; text-decoration: underline; font-family: helvetica, arial, Sans-serif;">Voir la version web</webversion></p>
+                  <p style="font-size: 1em; line-height:1.2em; margin: 0; padding: 0; color: #000000; font-family: helvetica, arial, Sans-serif;text-align:right;"><singleline label="Newsletter title">3 nouvelles formations</singleline></p>
+                  </td>
+                </tr>
+              </table>
+              <!--fin logo -->
+              <!-- Introduction -->
+              <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td colspan="3" height="20"><img src="px.gif" border="0" alt="" height="20" width="20"></td>
+                </tr>
+                <tr>
+                  <td width="30">
+                    <img src="px.gif" border="0" alt="" height="5" width="30">
+                  </td>
+                  <td>
+                    <p class="h3">
+                        Nos dernières actualités
+                    </p>
+                  </td>
+                  <td width="5%">
+                    <img src="px.gif" border="0" alt="" height="5" width="5">
+                  </td>
+                </tr>
+                <tr>
+                  <td width="5%">
+                    <img src="px.gif" border="0" alt="" height="5" width="5">
+                  </td>
+                  <td>
+                    <div class="bloc_text">
+                      <p>
+                        Voici les dernières actualités du SAWI.
+                      </p>
+                    </div>
+                  </td>
+                  <td width="30">
+                    <img src="px.gif" border="0" alt="" height="5" width="30">
+                  </td>
+                </tr>
+              </table>
+              <!-- fin intro -->
+              <table cellpadding="0" cellspacing="0" border="0" align="center" height="20" width="100%" class="full-table">
+                <tr>
+                  <td height="20" align="center">
+                    <img src="px.gif" alt="" height="20" width="20">
+                  </td>
+                </tr>
+              </table>
+              <!-- teaser actu rss -->
+              <datarepeater type="rss" src="http://salavaux.ch/222/sawi.rss">
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                  <tr>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                    <td>
+                      <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td>
+                            <div class="container_img">
+                              <rssitemlink><rssimage width="100%" /></rssitemlink>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="date">
+                              <rssitemday />.<rssitemmonth />.<rssitemyear />
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="h3">
+                              <rsstitle />
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="bloc_text">
+                              <rssbody paragraphs="1" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <div class="actu-links">
+                              <table cellpadding="8" cellspacing="0" border="0" height="auto">
+                                <tr>
+                                  <td>
+                                    <rssitemlink>Lire la suite</rssitemlink>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                  </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" border="0" align="center" height="20" width="100%" class="full-table">
+                  <tr>
+                    <td colspan="3" height="5" align="center">
+                      <img src="px.gif" alt="" height="5" width="5">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                    <td>
+                      <hr>
+                    </td>
+                    <td width="30">
+                      <img src="px.gif" border="0" alt="" height="5" width="30">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="5" align="center">
+                      <img src="px.gif" alt="" height="5" width="5">
+                    </td>
+                  </tr>
+                </table>
+              </datarepeater>
+            <!-- fin actu RSS -->
+            <!-- réseaux sociaux -->
+            <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+              <tr>
+                <td width="30">
+                  <img src="px.gif" border="0" alt="" height="5" width="30">
+                </td>
+                <td>
+                  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td colspan="2" height="40">
+                        <img src="px.gif" border="0" alt="" height="40" width="1">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <p class="h3">
+                          <singleline label="contact_title">
+                            Suivez-nous également sur les réseaux sociaux&nbsp;!
+                          </singleline>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="40">
+                        <a href="https://www.facebook.com/sawi.suisse" alt="facebook"><img src="facebook.png" border="0" alt="" height="30" width="30" style="margin:0;padding:0;"></a>
+                      </td>
+                      <td class="bloc_text">
+                        <a href="https://www.facebook.com/sawi.suisse" alt="facebook"><p><singleline label="Facebook">Likez-nous "a lot" sur Facebook</singleline></p></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="40">
+                        <a href="https://twitter.com/SawiSuisse" alt="twitter"><img src="twitter.png" border="0" alt="" height="30" width="30" style="margin:0;padding:0;"></a>
+                      </td>
+                      <td class="bloc_text">
+                        <a href="https://twitter.com/SawiSuisse" alt="twitter"><p><singleline label="Twitter">Attrapez nos gazouillis sur Twitter</singleline></p></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="40">
+                        <a href="https://www.youtube.com/channel/UCav9u2JbVtFIZQRviCBcznQ" alt="youtube"><img src="youtube.png" border="0" alt="" height="30" width="30" style="margin:0;padding:0;"></a>
+                      </td>
+                      <td class="bloc_text">
+                        <a href="https://www.youtube.com/channel/UCav9u2JbVtFIZQRviCBcznQ" alt="youtube"><p><singleline label="Youtube">Jouez-nous en boucle sur Youtube</singleline></p></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="40">
+                       <a href="https://www.instagram.com/sawisuisseromande/" alt="instagram"> <img src="instagram.png" border="0" alt="" height="30" width="30" style="margin:0;padding:0;"></a>
+                      </td>
+                      <td class="bloc_text">
+                        <a href="https://www.instagram.com/sawisuisseromande/" alt="instagram"><p><singleline label="Instagram">Mattez avec nous sur Instagram</singleline></p></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" height="20">
+                        <img src="px.gif" border="0" alt="" height="20" width="1">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="30">
+                  <img src="px.gif" border="0" alt="" height="5" width="30">
+                </td>
+              </tr>
+            </table>
+            <!-- fin réseaux sociaux -->
+          <!-- Pref et unsubscribe -->
+            <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+              <tr>
+                <td width="30">
+                  <img src="px.gif" border="0" alt="" height="5" width="30">
+                </td>
+                <td>
+                  <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" align="center"  style="background:url('http://www.sawi.com/de/fileadmin/templates/images/bar-yellow.png') 50% 100% no-repeat; background-size:contain;">
+                    <tr>
+                      <td colspan="2" height="20">
+                        <img src="px.gif" border="0" alt="" height="20" width="1">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="logo.png" width="166" height="82" alt="SAWI" style="height:auto;margin:0;padding:0;"/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="chapeau">
+                          Academy for Marketing and Communication SA
+                          Avenue de Florimont 1, 1006 Lausanne
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="h3">
+                          <a href="tel:+41213434060">+41 21 343 40 60</a>
+                        </p>
+                        <p class="h3">
+                          <a href="mailto:lausanne@sawi.com">lausanne@sawi.com</a>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left">
+                        <div class="bloc_text bloc_footer">
+                          <p>Éditer vos <preferences>préférences</preferences> ou vous pouvez également vous <unsubscribe>désinscrire</unsubscribe> de notre newsletter.<br/>
+                        <multiline label="unsubscribe_pref_message">
+                        Vous recevez cette newsletter car vous avez suivi l'une de nos formations
+                        </multiline>
+                        </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" height="40">
+                        <img src="px.gif" border="0" alt="" height="40" width="1">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="30">
+                  <img src="px.gif" border="0" alt="" height="5" width="30">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
